@@ -18,16 +18,16 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Hem</a></li>
-            <li class="nav-item"><a class="nav-link" href="info.html">Information</a></li>
-            <li class="nav-item"><a class="nav-link" href="staff.html">Staff</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
-          </ul>
-          <ul class="navbar-nav ms-auto">
-            <a href="apply.html"><button class="btn btn-green"><i class="bi bi-pencil-square"></i> Ansök nu!</button></a>
-          </ul>
-        </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Hem</a></li>
+              <li class="nav-item"><a class="nav-link" href="info.html">Information</a></li>
+              <li class="nav-item"><a class="nav-link" href="staff.html">Staff</a></li>
+              <li class="nav-item"><a class="nav-link active" href="contact.html">Kontakt</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <a href="apply.html"><button class="btn btn-green"><i class="bi bi-pencil-square"></i> Ansök nu!</button></a>
+            </ul>
+          </div>
       </div>
     </nav>
     <header class="container mb-3">
@@ -77,58 +77,33 @@
     <div class="page-content">
       <div class="container">
       <div class="row">
-        <div class="col-lg-9 blog">
-          <div class="blog-post card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="images/post.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body h-100">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply...</p>
-                  <div class="blog-actions d-flex justify-content-between">
-                    <button class="btn btn-grey"><i class="bi bi-clock"></i> 2023-10-30</button>
-                    <button class="btn btn-blue"><i class="bi bi-eye"></i> Läs mer</button>
-                  </div>
+        <div class="col-lg-9 contact">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                    <div class="col-lg-6">
+                        <img src="images/island.png" class="d-block mx-auto" alt="">
+                    </div>
+                    <div class="col-lg-6 my-auto">
+                        <form>
+                            <div class="mb-3">
+                              <label for="contact-email" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="contact-email" placeholder="Fyll i din Email address">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contact-username" class="form-label">Användarnamn</label>
+                                <input type="email" class="form-control" id="contact-username" placeholder="Fyll i ditt Minecraft användarnamn">
+                              </div>
+                            <div class="mb-3">
+                              <label for="contact-message" class="form-label">Meddelande</label>
+                              <textarea type="password" class="form-control" id="contact-message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-blue w-100 py-3">Skicka</button>
+                          </form>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="blog-post card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="images/post.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body h-100">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply...</p>
-                  <div class="blog-actions d-flex justify-content-between">
-                    <button class="btn btn-grey"><i class="bi bi-clock"></i> 2023-10-30</button>
-                    <button class="btn btn-blue"><i class="bi bi-eye"></i> Läs mer</button>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="blog-post card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="images/post.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body h-100">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply...</p>
-                  <div class="blog-actions d-flex justify-content-between">
-                    <button class="btn btn-grey"><i class="bi bi-clock"></i> 2023-10-30</button>
-                    <button class="btn btn-blue"><i class="bi bi-eye"></i> Läs mer</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="sidebar col-lg-3">
           <div class="card">
@@ -153,7 +128,7 @@
       </div>
     </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-auto">
       <div class="container">
       <div class="row">
         <div class="col my-auto">
