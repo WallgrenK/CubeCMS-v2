@@ -32,6 +32,18 @@ body {
 	transition:color .35s;
 }
 
+.navbar .dropdown li {
+    margin: 15px;
+}
+
+.navbar .dropdown li a:hover {
+    background: none;
+}
+
+.navbar .dropdown-menu {
+    padding: 0px;
+}
+
 .navbar .navbar-nav li a:hover {
     color: #fe666f;
 }

@@ -14,7 +14,33 @@
           <li class="nav-item"><a class="nav-link @if(Route::is('contact')) active @endif" href="{{ route('contact')}}">Kontakt</a></li>
         </ul>
         <ul class="navbar-nav ms-auto">
-          <a href="apply.html"><button class="btn btn-green"><i class="bi bi-pencil-square"></i> Ansök nu!</button></a>
+          @guest
+            @if (Route::has('login'))
+              <a href="{{ route('login') }}"><button class="btn btn-blue me-2">Logga in</button></a>
+            @endif
+
+            @if (Route::has('register'))
+            <a href="{{ route('register') }}"><button class="btn btn-orange">Registrera dig</button></a>
+            @endif
+              @else
+              <li class="nav-item dropdown my-auto">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 {{ Auth::user()->name }}
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Inställningar</a></li>
+                  <li><a class="dropdown-item" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                                  document.getElementById('logout-form').submit();">
+                     {{ __('Logout') }}
+                 </a></li>
+                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                  @csrf
+              </form>
+                </ul>
+              </li>
+                <a href="apply.html"><button class="btn btn-green"><i class="bi bi-pencil-square"></i> Ansök nu!</button></a>
+          @endguest
         </ul>
       </div>
     </div>
